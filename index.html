@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="nav-bar"></div>
+        
+        <div id="app">
+            <!-- <div class="cart">
+                <p>Cart {{ cart }}</p>
+            </div>
+            <div class="product">
+
+                <div class="product-image">
+                    <img v-bind:src="image">
+                </div>
+
+                <div class="product-info">
+                    <h1>{{ title }}</h1>
+                    <p v-if="inStock"><b>Availability</b> - In Stock</p>
+                    <p v-else><b>Availability</b> - Out of Stock</p>
+                    <p><b>Product Details</b></p>
+                    <ul>
+                        <li v-for="detail in details">{{ detail }}</li>
+                    </ul>
+
+                    <div v-for="(variant, index) in variants" 
+                        :key="variant.variantId"
+                        class="color-box"
+                        v-bind:style="{backgroundColor: variant.variantColor}"
+                        v-on:mouseover="updateProduct(index)">
+                    </div>
+
+                    <button v-on:click="addToCart" :disabled="!inStock" :class="{ disabledButton: !inStock }">
+                        Add to Cart</button>
+                </div>-->
+                <product :premium="premium"></product>
+                <product :premium="premium"></product>
+                <product :premium="premium"></product>
+                <product :premium="premium"></product>
+            </div>
+            
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <script src = "C:\Users\mayurkas\OneDrive - AMDOCS\Backup Folders\Desktop\Workplace\VueJs\main.js"></script>
+    </body>
+</html>
